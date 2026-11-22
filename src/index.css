@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-earth-paper: #FBF9F5;
+  --color-earth-sand: #F4EFEA;
+  --color-earth-terracotta: #A43B21;
+  --color-earth-indigo: #1C355E;
+  --color-earth-forest: #19432B;
+  --color-earth-ochre: #C88327;
+  --color-earth-bark: #2B2118;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Ethnic Brocade Motif Accent Line */
+.brocade-pattern {
+  background-color: #A43B21;
+  background-image: radial-gradient(#C88327 1px, transparent 1px), radial-gradient(#FBF9F5 1px, #A43B21 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Subtle Mountain Mist Overlay */
+.mist-gradient {
+  background: linear-gradient(180deg, rgba(251, 249, 245, 0) 0%, rgba(251, 249, 245, 0.85) 60%, rgba(251, 249, 245, 1) 100%);
+}
+
+.dark .mist-gradient {
+  background: linear-gradient(180deg, rgba(28, 25, 23, 0) 0%, rgba(28, 25, 23, 0.85) 60%, rgba(28, 25, 23, 1) 100%);
+}

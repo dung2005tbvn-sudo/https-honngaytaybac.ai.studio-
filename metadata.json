@@ -1,0 +1,6 @@
+{
+  "name": "Hồn Ngàn Tây Bắc - Di Sản Văn Hoá",
+  "description": "Khám phá sắc màu văn hoá, con người, ẩm thực và cảnh sắc hùng vĩ của 6 tỉnh vùng cao Tây Bắc Việt Nam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
